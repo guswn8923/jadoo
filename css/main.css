@@ -351,6 +351,11 @@ align-items: center;
   background: url(../images/top_destination_bg.svg) no-repeat 1044px bottom;
 }
 
+.destinations_list li img{
+  border-radius: 24px;
+  width: 100%;
+}
+
 .destinations_list li{
   width: 315px;
   position: relative;
