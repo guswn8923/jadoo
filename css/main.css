@@ -283,6 +283,7 @@ header .content .desc p{
 .services_list{
   display: flex;
   justify-content: space-between;
+
 }
 
 .services_list li{
@@ -340,3 +341,57 @@ align-items: center;
   white-space: nowrap;
 }
 
+
+/* DESTINATION*/
+
+.destinations_list{
+  padding: 0 92px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  background: url(../images/top_destination_bg.svg) no-repeat 1044px bottom;
+}
+
+.destinations_list li{
+  width: 315px;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow:
+  0 1.85px 3.15px rgba(0,0,0,0.048),
+  0 8.15px 6.52px rgba(0,0,0,0.079),
+  0 20px 13px rgba(0,0,0,0.01),
+  0 39px 25px rgba(0,0,0,0.0121),
+  0 64px 47px rgba(0,0,0,0.0152),
+  0 100px 80px rgba(0,0,0,0.02); 
+}
+
+
+.destinations_list li figcaption{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--white);
+  padding: 27px 25px 42px 20px;
+  margin-bottom: -1px;
+}
+
+.destinations_list li h4{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.destinations_list li p{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 16px;
+}
+
+.destinations_list li p i{
+  color: #000;
+}
