@@ -32,7 +32,14 @@ main>section{
   text-align: center;
 }
 
-
+.hidden{
+  position: absolute;
+  left: 0;
+  top: -99999em;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 
 .container{
   width: var(--container);
