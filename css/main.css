@@ -474,6 +474,14 @@ align-items: center;
   0px 20px 13px 0px rgba(0, 0, 0, 0.01), 
   0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
   0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+.active .pic_of_month .detail{
+  transform: none;
+  opacity: 1;
 }
 
 .pic_of_month .detail img{
@@ -542,6 +550,14 @@ align-items: center;
   0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 
   0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
   border-radius: 18px;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+.active .ongoing{
+  transform: none;
+  opacity: 1;
 }
 
 .ongoing h5{
@@ -585,9 +601,12 @@ align-items: center;
 .ongoing .progress_bar .bar{
   position: absolute;
   background:#8A79DF;
-  width: 73px; 
+  width: 0; 
   border-radius: 2.5px;
   height: 5px;
+  transition: 0.3s;
+  left: 0;
+  top: 0;
 }
 
 /* testimonials */
