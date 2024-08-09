@@ -4,6 +4,33 @@ let paginationUp = document.querySelector('.pagination .up');
 let paginationDown = document.querySelector('.pagination .down');
 let currentIdx = 0;
 let testimonialCount = testimonialsLists.length;
+let parterList = document.querySelector('.parten_list')
+let partnerListWidth = 234;
+let partnerListConut = document.querySelectorAll('.parten_list li').length;
+let partnerListLeft = 0;
+let parterListTotalWidth = partnerListWidth * partnerListConut;
+let animation;
+
+parterList.style.width = parterListTotalWidth +'px';
+
+function moveParterList(){
+  //partnerListLeft = partnerListLeft -5;
+  partnerListLeft -= 2;
+  if(partnerListLeft === -parterListTotalWidth/2){
+    partnerListLeft =0;
+  }
+  
+  parterList.style.left = partnerListLeft + 'px';
+  animation = requestAnimationFrame(moveParterList);
+}
+requestAnimationFrame(moveParterList);
+
+parterList.addEventListener('mouseenter',()=>{
+   cancelAnimationFrame(animation);
+});
+parterList.addEventListener('mouseleave',()=>{
+  requestAnimationFrame(moveParterList);
+})
 
 /*
 pagers를 클릭하면 할일
