@@ -825,3 +825,112 @@ align-items: center;
   font-size: 30px;
 }
 
+/* footer */
+footer{
+  margin-top: 86px;
+  padding: 80px 0;
+}
+footer > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav{
+  display: flex;
+  gap: 80px;
+  flex: 1;
+  justify-content: center;
+}
+
+footer .company{
+  width: 207px;
+}
+
+footer .company h2{
+  font-size: 44px;
+  line-height: 66px;
+  margin-bottom: 19px;
+  color: #181E4B;
+  font-weight: 500;
+}
+
+footer .company p{
+  font: 13px;
+  line-height: 1.24;
+}
+
+footer nav dt{
+  line-height: 1.24;
+  font-size: 21px;
+  font-weight: 700;
+  color: #080809;
+  margin-bottom: 34px;
+}
+
+footer nav dt dd{
+  font-size: 18px;
+  line-height: 1.24;
+  font-weight: 500;
+}
+
+footer nav dd + dd{
+  margin-top: 12px;
+}
+
+footer nav dt dd a{
+  color: var(--txt-color);
+}
+
+.outbound .sns{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 26px;
+}
+
+.outbound .sns li{
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow:0 2px 10px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outbound .sns li a{
+  color: #080809;
+}
+
+.outbound .sns li:hover{
+  background: 
+  conic-gradient(from 180deg at 50% 50%, 
+  #B8D2F1 0deg, 
+  #F289AA 60.00000178813934deg, 
+  #C68BF0 106.09081864356995deg, 
+  #D164DA 153.7500035762787deg, 
+  #C963E8 221.24999284744263deg, 
+  #BFC2E8 258.75deg, 
+  #FFC999 288.7499928474426deg, 
+  #D0D8C9 315deg,
+  #BAD0F1 334.13365602493286deg,
+  #CED8CB 358.9677572250366deg, 
+  rgba(255, 255, 255, 0.00) 360deg);
+}
+
+.outbound .sns li:hover a{
+  color: var(--white);
+}
+
+footer .store{
+  margin-top: 16px;
+  display: flex;
+  gap: 7px;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.24;
+  margin-top: 84px;
+}
